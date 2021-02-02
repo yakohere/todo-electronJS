@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: url("./background.jpg");
+  background-size: cover;
+}
+
+* {
+  font-family: "Alata", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f5f5f5;
+  width: 100%;
+}
+
+/* INPUT */
+
+input {
+  padding: 5px 5px 5px 5px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  border-bottom: 1px solid #f5f5f5;
+  color: #f5f5f5;
+  transition: 0.6s;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+input::placeholder {
+  color: #f5f5f5;
+  text-align: center;
+}
+
+/* TODOS */
+.todos {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  margin-top: 40px;
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 5px 15px 5px 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.todo:hover {
+  transform: scale(1.02);
+}
+
+.todo .text {
+  color: #2e2e2e;
+}
+
+.todo .button {
+  padding: 0;
+  width: 30px;
+}
+
+.todo .button:hover {
+  cursor: pointer;
+}
+
+.todo img {
+  width: 100%;
+}
+
+.completed {
+  background: rgba(0, 255, 127, 0.8);
+}
+
+.completed .text {
+  text-decoration: line-through;
+}
